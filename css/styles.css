@@ -496,7 +496,7 @@ header {
 	padding-left: 260px;
 	z-index: 100
 }
-#white-background {
+#gray-background {
 	background: #232323;
 	width: 260px;
 	position: fixed;
@@ -541,8 +541,8 @@ header {
 	color: #fff !important;
 }
 .container.no-header {
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .container.no-heading {
 	padding-top: 100px;
@@ -575,8 +575,13 @@ header {
 
 /* =6. Background Images
 --------------------------------------------------------------------------------------------------------*/
+.img-profile{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 .background-image1 {
-	background: url(../images/fullscreen07.jpg) no-repeat center;
+	background: #fff no-repeat center;
 	height: 100%;
 	display: block;
 	width: 100%;
@@ -590,7 +595,7 @@ header {
 	background-size: cover;
 }
 .background-image2 {
-	background: url(../images/fullscreen23.jpg) no-repeat center;
+	background: url(../images/about-fullscreen-01.jpg) no-repeat center;
 	height: 100%;
 	display: block;
 	width: 100%;
@@ -693,6 +698,12 @@ header {
 .height-400 {
 	height: 400px;
 }
+.height-350 {
+    height: 350px;
+}
+.height-150 {
+    height: 125px;
+}
 /* =End Background Images
 --------------------------------------------------------------------------------------------------------*/
 
@@ -778,7 +789,7 @@ a:hover .teaser-content h3 {
 	margin: 0px auto;
 	position: relative;
 	height: 100%;
-	z-index: 11
+	z-index: 11;
 }
 .child {
 	text-align: center;
@@ -865,11 +876,11 @@ a:hover .teaser-content h3 {
 	opacity: 1
 }
 .nav-tabs li a#first-tab {
-	background: url(../images/icons/bg-target@2x.png) no-repeat top center;
+	background: url(../images/icons/bg-quote@2x.png) no-repeat top center;
 	background-size: 48px 48px;
 }
 .nav-tabs li a#second-tab {
-	background: url(../images/icons/bg-keynote@2x.png) no-repeat top center;
+	background: url(../images/icons/bg-vector@2x.png) no-repeat top center;
 	background-size: 48px 48px;
 }
 .nav-tabs li a#third-tab {
@@ -924,7 +935,7 @@ a:hover .teaser-content h3 {
 }
 i.fa {
 	margin-right: 3px;
-	color: #2b2b2b
+	color: #2b2b2b;
 }
 p i.fa, .button i.fa {
 	color: #555;
@@ -948,14 +959,14 @@ p i.fa, .button i.fa {
 	vertical-align: middle;
 	display: inline-block;
 	font-size: 15px;
-	color: #232323;
+	color: #999;
 	margin: 0 !important;
 	padding: 0 !important;
 	padding-top: 9px !important;
 	opacity: 1;
 }
 a.circled:hover i.fa {
-	color: #fff !important;
+	color: #232323 !important;
 }
 .info-box-content .social-list {
 	margin-top: 20px;
@@ -1525,6 +1536,15 @@ a:hover .covering-image p, a:hover .covering-image h3, a:hover .covering-image h
 	z-index: 2;
 	position: relative;
 }
+.img-profile{
+    display: inline-block;
+    margin: 10px 0 20px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 51%;
+    z-index: 2;
+}
 .info-box-content .avatar img {
 	width: 64px;
 	height: 64px;
@@ -1537,15 +1557,16 @@ a:hover .covering-image p, a:hover .covering-image h3, a:hover .covering-image h
 --------------------------------------------------------------------------------------------------------*/
 footer {
 	font-size: 0;
+    background-color: #666;
 }
 footer p {
-	color: #888;
-	font-size: 12px;
+	color: #CECECE;
+	font-size: 14px;
 	display: inline-block;
 	padding: 0 25px;
 }
 footer p a {
-	color: #888;
+	color: #fff;
 }
 /* End Footer
 --------------------------------------------------------------------------------------------------------*/
@@ -1612,14 +1633,14 @@ ul.pagination li a.active:hover {
 --------------------------------------------------------------------------------------------------------*/
 .signature {
 	background: url(../images/signature.png) center no-repeat;
-	background-size: 185px 50px;
+	background-size: 150px 98.705px;
 	width: 185px;
-	height: 50px;
+	height: 121.7358px;
 	position: absolute;
 	display: block;
 	opacity: 0.6;
-	left: -49px;
-	top: 52px;
+	left: -59px;
+	top: 20px;
 	z-index: 1;
 	-webkit-transform: rotate(-10deg);
 	transform: rotate(-10deg);
